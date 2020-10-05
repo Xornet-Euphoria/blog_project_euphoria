@@ -1,6 +1,11 @@
 # The URL the site will be built for
 base_url = "https://xornet_euphoria.com"
 
+# metadata
+title = "Project Euphoria"
+description = "CTFが好き"
+generate_feed = true
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -10,6 +15,7 @@ highlight_code = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
 theme = "after-dark"
 taxonomies = [
     {name = "categories", rss = true},
@@ -18,3 +24,10 @@ taxonomies = [
 
 [extra]
 # Put all your custom variables here
+author = "Xornet"
+after_dark_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+]
+after_dark_title = "Project Euphoria"
