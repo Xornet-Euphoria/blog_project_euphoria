@@ -25,6 +25,7 @@ taxonomies = [
 [extra]
 # Put all your custom variables here
 author = "Xornet"
+twitter = "Xornet_Euphoria"
 after_dark_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
