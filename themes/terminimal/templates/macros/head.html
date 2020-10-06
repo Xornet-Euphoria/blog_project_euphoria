@@ -1,0 +1,30 @@
+{% macro head(config) %}
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) | safe }}">
+
+{%- if config.extra.accent_color %}
+    <link rel="stylesheet" href="{{ get_url(path="color/" ~ config.extra.accent_color ~ ".css", trailing_slash=false) | safe }}">
+{% else %}
+    <link rel="stylesheet" href="{{ get_url(path="color/blue.css", trailing_slash=false) | safe }}">
+{% endif -%}
+
+{%- if config.extra.background_color %}
+    {%- if config.extra.accent_color and config.extra.background_color != config.extra.accent_color %}
+        <link rel="stylesheet" href="{{ get_url(path="color/background_" ~ config.extra.background_color ~ ".css", trailing_slash=false) | safe }}">
+    {% endif -%}
+{% endif -%}
+
+{%- if config.extra.use_full_hack_font %}
+    <link rel="stylesheet" href="{{ get_url(path="font-hack.css", trailing_slash=false) | safe }}">
+{% else %}
+    <link rel="stylesheet" href="{{ get_url(path="font-hack-subset.css", trailing_slash=false) | safe }}">
+{% endif -%}
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/mathtex-script-type.min.js" integrity="sha512-2c9WyrhBiLmhhuJeAEmai4Uh9O+bjCRVsKaFkbj2vCLsJ3aTI0Bx2r0+gRPiqjnmNKATzzsjQGgmQXXEOERmmQ==" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+{% endmacro head %}

@@ -3,7 +3,6 @@ title = "Zolaを使ってみた"
 date = 2020-10-05
 
 [taxonomies]
-categories = ["zola"]
 tags = ["zola", "netlify"]
 +++
 

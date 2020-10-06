@@ -16,16 +16,38 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-theme = "after-dark"
+theme = "terminimal"
 taxonomies = [
-    {name = "categories", rss = true},
     {name = "tags", rss = true},
 ]
 
 [extra]
 # Put all your custom variables here
-author = "Xornet"
 twitter = "Xornet_Euphoria"
+
+# terminal
+accent_color = "green"
+background_color = "dark"
+
+logo_text = "Project Euphoria"
+author = "Xornet"
+
+# menu is enabled by adding menu_items (optional)
+menu_items = [
+    # each of these is optional, name and url are required
+    # $BASE_URL is going to be substituted by base_url from configuration
+    {name = "blog", url = "$BASE_URL"},
+
+    # tags should only be enabled if you have "tags" taxonomy
+    # see documentation below for more details
+    {name = "tags", url = "$BASE_URL/tags"},
+    {name = "archive", url = "$BASE_URL/archive"},
+
+    # set newtab to true to make the link open in new tab
+    # {name = "github", url = "url-to-your-github", newtab = true},
+]
+
+# after_dark (not used)
 after_dark_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
