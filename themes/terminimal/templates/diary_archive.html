@@ -2,9 +2,9 @@
 
 {% block content %}
     <div class="post">
-        <h1 class="post-title">{{ page.title }}</h1>
+        <h1 class="post-title">diary archive</h1>
 
-        {% set section = get_section(path="blog/_index.md") %}
+        {% set section = get_section(path="diary/_index.md") %}
 
         {{ post_macros::list_posts(pages=section.pages) }}
     </div>

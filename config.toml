@@ -36,13 +36,14 @@ author = "Xornet"
 menu_items = [
     # each of these is optional, name and url are required
     # $BASE_URL is going to be substituted by base_url from configuration
-    {name = "blog", url = "$BASE_URL"},
+    {name = "blog", url = "$BASE_URL/blog"},
 
     # tags should only be enabled if you have "tags" taxonomy
     # see documentation below for more details
     {name = "about me", url = "$BASE_URL/about"},
     {name = "tags", url = "$BASE_URL/tags"},
     {name = "archive", url = "$BASE_URL/archive"},
+    {name = "diary", url = "$BASE_URL/diary"},
 
     # set newtab to true to make the link open in new tab
     {name = "Twitter", url = "https://twitter.com/Xornet_Euphoria", newtab = true},

@@ -6,7 +6,7 @@ date = 2020-10-06
 tags = ["zola", "Tera", "KaTeX"]
 +++
 
-[前回のエントリ](@/1_hello_zola.md)でも述べているようにafter-darkを採用した。[Githubリポジトリ](https://github.com/getzola/after-dark)のREADMEに書いてある通りにやればだいたい動くが、後で忘れないように詰まりかけたところはメモしておく。
+[前回のエントリ](@/blog/1_hello_zola.md)でも述べているようにafter-darkを採用した。[Githubリポジトリ](https://github.com/getzola/after-dark)のREADMEに書いてある通りにやればだいたい動くが、後で忘れないように詰まりかけたところはメモしておく。
 
 (※ 2020/10/06追記: 浮気性なので1日で[terminimal](https://github.com/pawroman/zola-theme-terminimal/)に変えました)
 <!-- more -->
