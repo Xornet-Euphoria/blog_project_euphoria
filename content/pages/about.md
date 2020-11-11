@@ -28,6 +28,7 @@ Founder and Leader(?) of ./Vespiary
 |TokyoWesterns CTF 6th 2020|32/648||[link](https://hackmd.io/@Xornet/r1m4fk8SP)|
 |DarkCTF|10/808|
 |SECCON 2020 Online CTF|7/579||[link](https://project-euphoria.netlify.app/blog/3-seccon-2020/)|
+|KipodAfterFree CTF 2020|12/624|||
 
 ### Links for CTF
 
