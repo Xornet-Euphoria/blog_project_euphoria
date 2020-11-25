@@ -12,8 +12,6 @@ tags = ["CTF", "Writeup", "Crypto", "PRNG"]
 
 ## Writeup
 
-### Outline
-
 ### 配布ソースコード
 
 (多少コメントを加えています)
