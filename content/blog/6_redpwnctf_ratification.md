@@ -119,7 +119,7 @@ $$
 なお、`enc`は{{katex(body="N")}}を法とした値なのに`P, Q`の計算では{{katex(body="p")}}を法とした値として良いのかという疑問が浮かぶかもしれないが
 
 $$
-x \equiv y \bmod (pq) \Rightarrow \exist k \in \mathbb{Z} \ (x-y = kpq) \Rightarrow a \equiv b \bmod p
+x \equiv y \bmod (pq) \Rightarrow \exist k \in \mathbb{Z} \ (x-y = kpq) \Rightarrow x \equiv y \bmod p
 $$
 
 これが成り立つので特に問題は無い。以後断り無くこれを適用する場面が存在する。
