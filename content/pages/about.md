@@ -29,6 +29,7 @@ Founder and Leader(?) of ./Vespiary
 |DarkCTF|10/808|
 |SECCON 2020 Online CTF|7/579||[link](https://project-euphoria.netlify.app/blog/3-seccon-2020/)|
 |KipodAfterFree CTF 2020|12/624|||
+|pbctf 2020|10/457||[link](https://project-euphoria.netlify.app/blog/9-pbctf-2020/)|
 
 ### Links for CTF
 
