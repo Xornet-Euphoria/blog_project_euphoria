@@ -7,3 +7,7 @@ ZOLA_VERSION = "0.12.2"
 
 [context.deploy-preview]
 command = "zola build --base-url $DEPLOY_PRIME_URL"
+
+[[redirects]]
+from = "https://project-euphoria.netlify.app/*"
+to = "https://project-euphoria.dev/:splat"

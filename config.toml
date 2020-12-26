@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://project-euphoria.netlify.app"
+base_url = "https://project-euphoria.dev"
 
 # metadata
 title = "Project Euphoria"
