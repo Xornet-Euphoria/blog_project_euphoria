@@ -12,4 +12,4 @@ command = "zola build --base-url $DEPLOY_PRIME_URL"
 from = "https://project-euphoria.netlify.app/*"
 to = "https://project-euphoria.dev/:splat"
 status = 301
-forcr = true
+force = true
