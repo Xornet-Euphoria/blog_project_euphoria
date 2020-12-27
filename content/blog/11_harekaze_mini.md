@@ -229,7 +229,7 @@ $ hexdump -C tiny
 
 ヘッダに`UUN_KAWAII`が発生している。このせいでGhidraに放り込んでも上手く認識してくれなかったので`UUN`を`02 01 01`に書き換えて`e_ident`として問題無い値にしてから読み込んだらGhidraで無事に読めた。
 
-- 参考: `https://linuxjm.osdn.jp/html/LDP_man-pages/man5/elf.5.html`
+- 参考: <https://linuxjm.osdn.jp/html/LDP_man-pages/man5/elf.5.html>
 
 すると次のようなentryのディスアセンブル結果が得られる。
 
