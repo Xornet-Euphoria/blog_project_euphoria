@@ -7,20 +7,35 @@ path = "about"
 
 * alias(es): Xornet (, Hornet, Tenxor)
 * gender: male
-* University: Tokyo Institute of Technology (Physics)
+* email: einnotwendigesubel@gmail.com
+
+### Education
+
+* Tokyo Institute of Technology (Physics) (2015/4~)
+* ??? (Information Science) (2021/4~)
+
+## Interest
+
+* Cyber Security
+  * Cryptography
+  * Binary Exploitation
+  * Malware Analysis
+* Number Theory
+* Quantum Algorithm
+* Theory of Computation
 
 ## CTF
 
-Like: Pwn >= (Modern) Crypto >> Forensics > Others
-
-Founder and Leader(?) of ./Vespiary
+* Like: Modern Crypto, Pwn
+* Team: ./Vespiary (Founder)
 
 ### Results
 
-top 5% result only
-
 |event|result|note|writeup|
 |----|----|----|----|
+|ångstromCTF 2019|33/1374|my first CTF|[link](https://github.com/Xornet-Euphoria/angstromCTF_2019)|
+|InterKosenCTF 2019|4/91||[link](https://github.com/Xornet-Euphoria/InterKosenCTF_2019)|
+|TokyoWesterns CTF 5th 2019|59/1005||[link](https://xornet.hatenablog.com/entry/2019/09/03/120425)|
 |SECCON CTF 2019 Quals|37/799|国内決勝(Domestic)出場(12/15)|
 |redpwnCTF 2020|16/1519|
 |ASIS CTF 2020|31/815|
@@ -40,6 +55,21 @@ top 5% result only
 * [github(team)](https://github.com/x-vespiary): team writeups are here
 * [Archived CTF solutions](https://hackmd.io/@Xornet/BkemeSAhU)
 * [CryptoHack](https://cryptohack.org/user/Xornet/)
+
+## Hobby
+
+* Music(listening)
+  * IDM
+  * Frenchcore
+  * Industrial Hardcore
+  * Hard Techno
+  * Hi-Tech (very fast psychedelic music)
+* Video Game
+  * Puzzle
+  * FPS
+  * Openworld
+  * Sandbox
+  * Novel
 
 ## Links
 
