@@ -73,7 +73,7 @@ path = "about"
 
 ## Links
 
-* [Twitter](https://twitter.com/Xornet_Euphoria): Almost Japanese and junk Tweets. I don't allow DM because of spam, sorry.
+* [Twitter](https://twitter.com/Xornet_Euphoria): Almost Japanese and junk Tweets.
 * [old blog](https://xornet.hatenablog.com/): (stop update) Some articles(for example, writeups) will be moved to this blog.
 * [Github](https://github.com/Xornet-Euphoria): I'm not a developer. I sometimes write CTF solutions.
 * [HackMD](https://hackmd.io/@Xornet): Archived CTF solutions and some articles about cryptography and mathematics.
