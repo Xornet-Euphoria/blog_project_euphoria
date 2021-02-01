@@ -6,8 +6,7 @@ title = "Project Euphoria"
 description = "CTFが好き"
 
 # feed
-generate_feed = true
-feed_filename = "rss.xml"
+generate_rss = true  # terminimal's parameter is `generate_rss` (not `generate_feed`)
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
