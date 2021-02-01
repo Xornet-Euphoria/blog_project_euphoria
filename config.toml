@@ -5,6 +5,10 @@ base_url = "https://project-euphoria.dev"
 title = "Project Euphoria"
 description = "CTFが好き"
 
+# feed
+generate_feed = true
+feed_filename = "rss.xml"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
@@ -47,11 +51,3 @@ menu_items = [
     # set newtab to true to make the link open in new tab
     {name = "Twitter", url = "https://twitter.com/Xornet_Euphoria", newtab = true},
 ]
-
-# after_dark (not used)
-after_dark_menu = [
-    {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/categories", name = "Categories"},
-    {url = "$BASE_URL/tags", name = "Tags"},
-]
-after_dark_title = "Project Euphoria"
