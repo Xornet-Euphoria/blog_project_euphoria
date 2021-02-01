@@ -10,8 +10,10 @@
     <title>{%- block title %}{{ config.title }}{% endblock title -%}</title>
     {{ head_macros::head(config=config) }}
 
-    {%- if config.generate_rss %}
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
+    {%- if config.generate_feed %}
+        {% block rss %}
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) | safe }}">
+        {% endblock %}
     {% endif -%}
 
     {%- if config.extra.favicon %}
