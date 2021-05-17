@@ -12,7 +12,7 @@ path = "about"
 ### Education
 
 * Tokyo Institute of Technology (Physics) (2015/4~)
-* ??? (Information Science) (2021/4~)
+* Japan Advanced Institute of Science and Technology (Information Science) (2021/4~)
 
 ## Interest
 
@@ -22,7 +22,6 @@ path = "about"
   * Malware Analysis
 * Number Theory
 * Quantum Algorithm
-* Theory of Computation
 
 ## CTF
 
@@ -47,6 +46,9 @@ path = "about"
 |KipodAfterFree CTF 2020|12/624|||
 |pbctf 2020|10/457||[link](https://project-euphoria.dev/blog/9-pbctf-2020/)|
 |Harekaze mini CTF 2020|5/141|Perfect|[link](https://project-euphoria.dev/blog/11-harekaze-mini/)|
+|zer0pts CTF 2021|15/951||[link](https://project-euphoria.dev/blog/18-zer0pts-2021/)|
+|LINE CTF|8/680||[link](https://github.com/x-vespiary/writeup/blob/master/2021/03-line/crypto-babycrypto4.md)|
+|DEF CON CTF Qualifier 2021|34/433|||
 
 ### Links for CTF
 
@@ -55,21 +57,6 @@ path = "about"
 * [github(team)](https://github.com/x-vespiary): team writeups are here
 * [Archived CTF solutions](https://hackmd.io/@Xornet/BkemeSAhU)
 * [CryptoHack](https://cryptohack.org/user/Xornet/)
-
-## Hobby
-
-* Music(listening)
-  * IDM
-  * Frenchcore
-  * Industrial Hardcore
-  * Hard Techno
-  * Hi-Tech (very fast psychedelic music)
-* Video Game
-  * Puzzle
-  * FPS
-  * Openworld
-  * Sandbox
-  * Novel
 
 ## Links
 
