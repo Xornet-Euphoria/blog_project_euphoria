@@ -49,7 +49,7 @@ path = "about"
 |zer0pts CTF 2021|15/951||[link](https://project-euphoria.dev/blog/18-zer0pts-2021/)|
 |LINE CTF|8/680||[link](https://github.com/x-vespiary/writeup/blob/master/2021/03-line/crypto-babycrypto4.md)|
 |DEF CON CTF Qualifier 2021|34/433|||
-|Circle City Con 2021|2/291|||
+|Circle City Con 2021|2/291||[link](https://project-euphoria.dev/blog/19-ccc-2021/)|
 
 ### Links for CTF
 
