@@ -52,7 +52,7 @@ path = "about"
 |Circle City Con 2021|2/291||[link](https://project-euphoria.dev/blog/19-ccc-2021/)|
 |Crypto CTF 2021|15/444|||
 |BSides Noida CTF 2021|4/411|||
-|CakeCTF 2021|2/157|||
+|CakeCTF 2021|2/157||[link](https://project-euphoria.dev/blog/20-cake/)|
 
 ### Links for CTF
 
