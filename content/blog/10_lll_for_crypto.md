@@ -3,7 +3,7 @@ title = "LLLでCrypto問題を解く"
 date = 2020-12-23
 
 [taxonomies]
-tags = ["CTF", "Writeup", "Crypto", "LLL"]
+tags = ["CTF", "Writeup", "Crypto", "LLL", "Lattice"]
 +++
 
 この記事は[CTF Advent Calendar 2020](https://adventar.org/calendars/5338)の23日目の記事です。1つ前の記事はakiko_pusuさんの[freeCodeCampからpicoCTF。ちょっとは進んでる？](https://daily-postit.hatenablog.com/entry/20201221-freecodecamp-picoCTF-2)でした。
