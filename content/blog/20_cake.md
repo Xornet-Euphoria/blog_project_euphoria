@@ -55,8 +55,8 @@ $$
 
 $$
 \begin{aligned}
-x &\equiv p^r + q^r \cr
-y &\equiv p^r + (qr)^r \cr
+x &\equiv p^r + q^r \bmod n \cr
+y &\equiv p^r + (qr)^r \bmod n \cr
 \end{aligned}
 $$
 
@@ -202,7 +202,7 @@ Flag: `CakeCTF{ju57_d0_LLL_th3n_s01v3_CVP_wi7h_babai}`
 
 ## 感想
 
-ワクチン打ってる間にSolvesが少ないCryptoは全部解かれたのと、土曜夜～日曜昼にかけて副反応に苦しんでいたのでチームに全然貢献出来なかったのは残念でしたが、2位だったので景品があるらしいです、やったね。ちなみに1位はzer0ptsさんです、おめでとうございます。
+ワクチン打ってる間にSolvesが多いCryptoは全部解かれたのと、土曜夜～日曜昼にかけて副反応に苦しんでいたのでチームに全然貢献出来なかったのは残念でしたが、2位だったので景品があるらしいです、やったね。ちなみに1位はzer0ptsさんです、おめでとうございます。
 
 Party Ticketが解けなかったのは残念でした。しかもHastad's Broadcast AttackのWikipedia(en)を読んだり、チームに提供していれば一般化について知って解けたはずで、一度参考にしようとチーム内Wikiの項目を参照したのにWikipediaの方を参照しなかったのは本当に後悔しています。
 
