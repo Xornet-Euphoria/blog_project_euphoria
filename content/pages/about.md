@@ -50,6 +50,9 @@ path = "about"
 |LINE CTF|8/680||[link](https://github.com/x-vespiary/writeup/blob/master/2021/03-line/crypto-babycrypto4.md)|
 |DEF CON CTF Qualifier 2021|34/433|||
 |Circle City Con 2021|2/291||[link](https://project-euphoria.dev/blog/19-ccc-2021/)|
+|Crypto CTF 2021|15/444|||
+|BSides Noida CTF 2021|4/411|||
+|CakeCTF 2021|2/157|||
 
 ### Links for CTF
 
