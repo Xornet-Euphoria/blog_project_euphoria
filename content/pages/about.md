@@ -7,7 +7,9 @@ path = "about"
 
 * alias(es): Xornet (, Hornet, Tenxor)
 * gender: male
-* email: einnotwendigesubel@gmail.com
+* email: einnotwendigesubel[@]gmail.com
+  * Please replace "[@]" to "@"
+  * In the future, the address will be changed
 
 ### Education
 
