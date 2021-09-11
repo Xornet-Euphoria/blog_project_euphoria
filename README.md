@@ -1,6 +1,6 @@
 # Project Euphoria
 
-<https://project-euphoria.netlify.app/>
+<https://project-euphoria.dev>
 
 ## about
 

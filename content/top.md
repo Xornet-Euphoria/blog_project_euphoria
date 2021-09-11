@@ -5,9 +5,10 @@ path = "top"
 
 ## Description
 
-CTF Freak(CTF狂)になりたい
+I wanna be a "CTF Freak"
 
 ## Contents
 
-- [blog](@/blog/_index.md): ブログ、主にCTFに関する事を書きます。
-- [about me](@/pages/about.md): 私についての情報と出場して成績が良かったCTFの成績を載せています。
+- [blog](@/blog/_index.md): Most articles are about CTF
+- [about me](@/pages/about.md): Biography, CTF result and links
+- [Repository](https://github.com/Xornet-Euphoria/blog_project_euphoria): You can get all contents of this site from here

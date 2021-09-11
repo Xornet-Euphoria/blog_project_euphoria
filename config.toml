@@ -49,4 +49,5 @@ menu_items = [
 
     # set newtab to true to make the link open in new tab
     {name = "Twitter", url = "https://twitter.com/Xornet_Euphoria", newtab = true},
+    {name = "Repository", url = "https://github.com/Xornet-Euphoria/blog_project_euphoria", newtab = true}
 ]
