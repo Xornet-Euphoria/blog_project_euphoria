@@ -13,7 +13,7 @@ tags = ["CTF", "Writeup", "Crypto", "Pwn", "Rabin", "Elliptic Curve"]
 ## Table of Contents
 
 - [filtered](https://project-euphoria.dev/blog/21-acsc/#filtered)
-- [RSA stream](https://project-euphoria.dev/21-acsc/#rsa-stream)
+- [RSA stream](https://project-euphoria.dev/blog/21-acsc/#rsa-stream)
 - [CBCBC](https://project-euphoria.dev/blog/21-acsc/#cbcbc)
 - [Swap on Curve](https://project-euphoria.dev/blog/21-acsc/#swap-on-curve)
 - [Two Rabin](https://project-euphoria.dev/blog/21-acsc/#two-rabin)
