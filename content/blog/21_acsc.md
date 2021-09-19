@@ -538,7 +538,7 @@ $$
 
 ここで上の式の{{katex(body="x")}}については{{katex(body="x(x^2 + a)")}}と分解する事が出来、2次の項は下の式を代入する事で消去出来る。すると1次の項だけ残るので両辺2乗して強引に2次式にしてから再度代入すれば{{katex(body="x")}}の項を消去することが出来るので後はこれをSagemathの`roots()`メソッドに解かせて{{katex(body="y")}}を求め、下の式に代入したものの平方根を求めて終わり。
 
-Ref by [taiyaki](https://twitter.com/taiyaki_ctf): [zer0pts CTF writeup - あさっちの不定期日記](https://taitai-tennis.hatenablog.com/entry/2021/03/07/233441)
+Ref by [taiyakiさん](https://twitter.com/taiyaki_ctf): [zer0pts CTF writeup - あさっちの不定期日記](https://taitai-tennis.hatenablog.com/entry/2021/03/07/233441)
 
 使用コード(Sagemath)は次の通り
 
