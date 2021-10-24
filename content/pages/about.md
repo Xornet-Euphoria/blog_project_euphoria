@@ -57,6 +57,7 @@ path = "about"
 |CakeCTF 2021|2/157||[link](https://project-euphoria.dev/blog/20-cake/)|
 |DownUnderCTF 2021|2/1594||[link](https://project-euphoria.dev/blog/22-du-2021/)|
 |TSG CTF 2021|3/775||[link](https://project-euphoria.dev/blog/23-tsg-2021/)|
+|ASIS CTF 2021|14/741||[link](https://project-euphoria.dev/blog/24-asis-2021/)|
 
 ### Links for CTF
 
