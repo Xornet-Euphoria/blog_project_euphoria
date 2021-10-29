@@ -1,6 +1,7 @@
 +++
 title = "about me"
 path = "about"
+description = "About Me"
 +++
 
 ## Metadata
