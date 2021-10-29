@@ -34,6 +34,11 @@
     {% endif %}
     <meta property="article:author" content="{{ config.extra.author }}"/>
     <meta property="twitter:card" content="summary" />
+    {% if page.image %}
+        <meta property="twitter:image" content="{{ page.image }}"/>
+    {% else %}
+        <meta property="twitter:image" content="{{ config.extra.image }}"/>
+    {% endif %}
 {% endblock ogp %}
 
 {% block content %}
