@@ -4,6 +4,14 @@
 {{page.title}} - {{ config.title }}
 {% endblock title %}
 
+{%- block extra_head %}
+    {%- if page.description %}
+        <meta name="description" content="{{ page.description }}"/>
+    {%- else %}
+        <meta name="description" content="{{ config.description }}"/>
+    {%- endif -%}
+{% endblock extra_head -%}
+
 {% block content %}
     <div class="post">
         {{ post_macros::header(page=page) }}
