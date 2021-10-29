@@ -14,8 +14,8 @@
 
 {%- block ogp %}
     <meta property="og:title" content="{{ page.title }} - {{ config.title }}"/>
-    {% if page.type %}
-        <meta property="og:type" content="{{ page.type }}" />
+    {% if page.extra.type %}
+        <meta property="og:type" content="{{ page.extra.type }}" />
     {% else %}
         <meta property="og:type" content="article" />
     {% endif %}
@@ -27,15 +27,15 @@
     {% endif %}
     <meta property="og:locale" content="ja_JP"/>
     <meta property="og:site_name" content="{{ config.title }}"/>
-    {% if page.image %}
-        <meta property="og:image" content="{{ get_url(path=page.image) }}"/>
+    {% if page.extra.image %}
+        <meta property="og:image" content="{{ get_url(path=page.extra.image) }}"/>
     {% else %}
         <meta property="og:image" content="{{ get_url(path=config.extra.image) }}"/>
     {% endif %}
     <meta property="article:author" content="{{ config.extra.author }}"/>
     <meta property="twitter:card" content="summary" />
-    {% if page.image %}
-        <meta property="twitter:image" content="{{ get_url(path=page.image) }}"/>
+    {% if page.extra.image %}
+        <meta property="twitter:image" content="{{ get_url(path=page.extra.image) }}"/>
     {% else %}
         <meta property="twitter:image" content="{{ get_url(path=config.extra.image) }}"/>
     {% endif %}
