@@ -12,6 +12,29 @@
     {%- endif -%}
 {% endblock extra_head -%}
 
+{%- block ogp %}
+    <meta property="og:title" content="{{ page.title }} - {{ config.title }}"/>
+    {% if page.type %}
+        <meta property="og:type" content="{{ page.type }}" />
+    {% else %}
+        <meta property="og:type" content="article" />
+    {% endif %}
+        <meta property="og:url" content="{{ current_url }}" />
+    {% if page.description %}
+        <meta property="og:description" content="{{ page.description }}"/>
+    {% else %}
+        <meta property="og:description" content="{{ config.description }}"/>
+    {% endif %}
+    <meta property="og:locale" content="ja_JP"/>
+    <meta property="og:site_name" content="{{ config.title }}"/>
+    {% if page.image %}
+        <meta property="og:image" content="{{ page.image }}"/>
+    {% else %}
+        <meta property="og:image" content="{{ config.extra.image }}"/>
+    {% endif %}
+    <meta property="article:author" content="{{ config.extra.author }}"/>
+{% endblock ogp %}
+
 {% block content %}
     <div class="post">
         {{ post_macros::header(page=page) }}

@@ -37,6 +37,7 @@ logo_text = "Project Euphoria"
 author = "Xornet"
 favicon = "/icon.png"
 favicon_mimetype = "image/png"
+image = "/icon.png"
 
 # menu is enabled by adding menu_items (optional)
 menu_items = [

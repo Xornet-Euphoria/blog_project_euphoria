@@ -21,7 +21,18 @@
     {% endif -%}
 
     {%- block extra_head %}
+        <meta name="description" content="{{ config.description }}"/>
     {% endblock extra_head -%}
+    
+    {%- block ogp %}
+        <meta property="og:title" content="{{ config.title }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ current_url }}" />
+        <meta property="og:description" content="{{ config.description }}"/>
+        <meta property="og:locale" content="ja_JP"/>
+        <meta property="og:site_name" content="{{ config.title }}"/>
+        <meta property="og:image" content="{{ config.extra.image }}"/>
+    {% endblock ogp -%}
 </head>
 
 <body class="">
