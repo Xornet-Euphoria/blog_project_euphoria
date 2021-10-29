@@ -28,16 +28,16 @@
     <meta property="og:locale" content="ja_JP"/>
     <meta property="og:site_name" content="{{ config.title }}"/>
     {% if page.image %}
-        <meta property="og:image" content="{{ page.image }}"/>
+        <meta property="og:image" content="{{ get_url(path=page.image) }}"/>
     {% else %}
-        <meta property="og:image" content="{{ config.extra.image }}"/>
+        <meta property="og:image" content="{{ get_url(path=config.extra.image) }}"/>
     {% endif %}
     <meta property="article:author" content="{{ config.extra.author }}"/>
     <meta property="twitter:card" content="summary" />
     {% if page.image %}
-        <meta property="twitter:image" content="{{ page.image }}"/>
+        <meta property="twitter:image" content="{{ get_url(path=page.image) }}"/>
     {% else %}
-        <meta property="twitter:image" content="{{ config.extra.image }}"/>
+        <meta property="twitter:image" content="{{ get_url(path=config.extra.image) }}"/>
     {% endif %}
 {% endblock ogp %}
 

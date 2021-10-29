@@ -31,9 +31,9 @@
         <meta property="og:description" content="{{ config.description }}"/>
         <meta property="og:locale" content="ja_JP"/>
         <meta property="og:site_name" content="{{ config.title }}"/>
-        <meta property="og:image" content="{{ config.extra.image }}"/>
+        <meta property="og:image" content="{{ get_url(path=config.extra.image) }}"/>
         <meta property="twitter:card" content="summary" />
-        <meta property="twitter:image" content="{{ config.extra.image }}"/>
+        <meta property="twitter:image" content="{{ get_url(path=config.extra.image) }}"/>
     {% endblock ogp -%}
 </head>
 
