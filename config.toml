@@ -29,12 +29,14 @@ taxonomies = [
 # Put all your custom variables here
 twitter = "Xornet_Euphoria"
 
-# terminal
+# terminimal
 accent_color = "green"
 background_color = "dark"
 
 logo_text = "Project Euphoria"
 author = "Xornet"
+favicon = "/icon.png"
+favicon_mimetype = "image/png"
 
 # menu is enabled by adding menu_items (optional)
 menu_items = [
