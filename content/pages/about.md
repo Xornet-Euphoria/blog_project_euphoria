@@ -59,7 +59,7 @@ description = "About Me"
 |DownUnderCTF 2021|2/1594||[link](https://project-euphoria.dev/blog/22-du-2021/)|
 |TSG CTF 2021|3/775||[link](https://project-euphoria.dev/blog/23-tsg-2021/)|
 |ASIS CTF 2021|14/741||[link](https://project-euphoria.dev/blog/24-asis-2021/)|
-|BSides Ahmedabad CTF 2021|1/314||[link](http://127.0.0.1:1111/blog/25-zer0pts-2-2021/)|
+|BSides Ahmedabad CTF 2021|1/314||[link](https://project-euphoria.dev/blog/25-zer0pts-2-2021/)|
 
 ### Links for CTF
 
