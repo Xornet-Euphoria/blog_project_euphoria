@@ -29,7 +29,7 @@ description = "About Me"
 ## CTF
 
 * Like: Modern Crypto, Pwn
-* Team: ./Vespiary (Founder)
+* Team: ./Vespiary (Co-Founder)
 
 ### Results
 
