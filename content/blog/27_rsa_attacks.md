@@ -7,7 +7,9 @@ description = "今年取り組んだCrypto問題は妙にRSA暗号に対する�
 tags = ["CTF", "Crypto", "RSA"]
 +++
 
-この記事は[CTF Advent Calendar 2021](https://adventar.org/calendars/6914)の14日目の記事です。1つ前の記事は[keymoon](https://twitter.com/kymn_)さんが時間跳躍して書いてくれるでしょう。時間跳躍前は[ﾈｺﾁｬﾝ](https://twitter.com/2llr)の[minaminao/ctf-blockchain: Summary of CTF Blockchain Challenges](https://github.com/minaminao/ctf-blockchain)でした。
+この記事は[CTF Advent Calendar 2021](https://adventar.org/calendars/6914)の14日目の記事です。1つ前の記事は[keymoon](https://twitter.com/kymn_)さんが時間跳躍して[SECCON CTF 2021 参加記/Writeup - 雑記](https://keymoon.hatenablog.com/entry/2021/12/14/194414)を書いてくれました。
+
+(時間跳躍前は[ﾈｺﾁｬﾝ](https://twitter.com/2llr)の[minaminao/ctf-blockchain: Summary of CTF Blockchain Challenges](https://github.com/minaminao/ctf-blockchain)でした。)
 
 今年取り組んだCrypto問題は妙にRSA暗号に対する攻撃を一般化して他でも使えるような問題が多かったので、RSAに対する有名な攻撃を一般化して他でも使えたような例を幾つか紹介します。
 
@@ -15,7 +17,6 @@ tags = ["CTF", "Crypto", "RSA"]
 
 ## Table of Contents
 
-- [Prerequisite](#prerequisite)
 - [はじめに](#hazimeni)
 - [Fermat's Method](#fermat-s-method)
 - [Håstad's Broadcast Attack](#hastad-s-broadcast-attack)
@@ -24,7 +25,13 @@ tags = ["CTF", "Crypto", "RSA"]
 - [あとがき](#atogaki)
 - [参考資料](#can-kao-zi-liao)
 
-## Prerequisite
+## はじめに
+
+英語が読める方は各攻撃の英語版Wikipediaと[Twenty years of attacks on the RSA cryptosystem](https://crypto.stanford.edu/~dabo/abstracts/RSAattack-survey.html)を読めばこの記事は不要です。ここまでのご閲覧ありがとうございました。
+
+また、タイトルはかの有名な資料である[RSA暗号運用でやってはいけない n のこと #ssmjp](https://www.slideshare.net/sonickun/rsa-n-ssmjp)をリスペクトしました(勝手に使ってごめんなさい)。
+
+### Prerequisite
 
 この記事を読むにあたって次の知識が必要になります。
 
@@ -35,12 +42,6 @@ tags = ["CTF", "Crypto", "RSA"]
   - Coppersmith's Attack自体が多変数の場合も含めて強力なソルバになる事は有名なので今回は扱いません
 - 終結式
   - Coppersmith's Short Pad Attackで利用
-
-## はじめに
-
-英語が読める方は各攻撃の英語版Wikipediaと[Twenty years of attacks on the RSA cryptosystem](https://crypto.stanford.edu/~dabo/abstracts/RSAattack-survey.html)を読めばこの記事は不要です。ここまでのご閲覧ありがとうございました。
-
-また、タイトルはかの有名な資料である[RSA暗号運用でやってはいけない n のこと #ssmjp](https://www.slideshare.net/sonickun/rsa-n-ssmjp)をリスペクトしました(勝手に使ってごめんなさい)。
 
 ## Fermat's Method
 
