@@ -1,5 +1,5 @@
 +++
-title = "Writeup: RTACTF"
+title = "Writeup: RTACTF (Crypto)"
 date = 2021-12-19
 description = "SECCON電脳会議(だっけ?)の裏側で行われていたRTACTFで公開されていた問題の内、Cryptoを全部解いたのでWriteupを書きます。"
 
