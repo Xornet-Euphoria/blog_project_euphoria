@@ -6,7 +6,7 @@ description = "About Me"
 
 ## Metadata
 
-* alias(es): Xornet (, Hornet, Tenxor)
+* alias(es): Xornet
 * gender: male
 * email: einnotwendigesubel[@]gmail.com
   * Please replace "[@]" to "@"
@@ -14,8 +14,8 @@ description = "About Me"
 
 ### Education
 
-* Tokyo Institute of Technology (Physics) (2015/4~)
-* Japan Advanced Institute of Science and Technology (Information Science) (2021/4~)
+* Tokyo Institute of Technology (Physics) (2015/4-2021/3)
+* Japan Advanced Institute of Science and Technology (Information Science) (2021/4-)
 
 ## Interest
 
@@ -23,12 +23,14 @@ description = "About Me"
   * Cryptography
   * Binary Exploitation
   * Malware Analysis
-* Number Theory
-* Quantum Algorithm
+* Mathematics
+  * Number Theory
+  * Algebra
+* Theory of Computation
 
 ## CTF
 
-* Like: Modern Crypto, Pwn
+* Like: Crypto (public key cryptography), Pwn
 * Team: ./Vespiary (Co-Founder)
 
 ### Results
@@ -72,9 +74,6 @@ description = "About Me"
 
 ## Links
 
-* [Twitter](https://twitter.com/Xornet_Euphoria): Almost Japanese and junk Tweets.
 * [old blog](https://xornet.hatenablog.com/): (stop update) Some articles(for example, writeups) will be moved to this blog.
 * [Github](https://github.com/Xornet-Euphoria): I'm not a developer. I sometimes write CTF solutions.
 * [HackMD](https://hackmd.io/@Xornet): Archived CTF solutions and some articles about cryptography and mathematics.
-* [Steam](https://steamcommunity.com/id/xornet_euphoria/)
-* Discord (Xornet\#3895): If you don't send spams, be my friend!!
