@@ -48,7 +48,7 @@ menu_items = [
     # tags should only be enabled if you have "tags" taxonomy
     # see documentation below for more details
     {name = "about me", url = "$BASE_URL/about"},
-    {name = "problems (coming soon)", url = "$BASE_URL/problems"},
+    {name = "problems", url = "$BASE_URL/problems"},
     {name = "tags", url = "$BASE_URL/tags"},
     {name = "archive", url = "$BASE_URL/archive"},
 
