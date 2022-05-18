@@ -12,11 +12,6 @@ description = "About Me"
   * Please replace "[@]" to "@"
   * In the future, the address will be changed
 
-### Education
-
-* Tokyo Institute of Technology (Physics) (2015/4-2021/3)
-* Japan Advanced Institute of Science and Technology (Information Science) (2021/4-)
-
 ## Interest
 
 * Cyber Security
@@ -63,9 +58,12 @@ description = "About Me"
 |ASIS CTF 2021|14/741||[link](https://project-euphoria.dev/blog/24-asis-2021/)|
 |BSides Ahmedabad CTF 2021|1/314||[link](https://project-euphoria.dev/blog/25-zer0pts-2-2021/)|
 |N1CTF 2021|7/601||[link](https://project-euphoria.dev/blog/26-n1ctf-2021/)|
+|CrewCTF 2022|5/758|||
+|ångstromCTF 2022|7/1180|||
 
 ### Links for CTF
 
+* [CTF Solutions](https://project-euphoria.dev/problems/)
 * [CTFtime(team)](https://ctftime.org/team/80092)
 * [CTFtime(user)](https://ctftime.org/user/64130)
 * [github(team)](https://github.com/x-vespiary): team writeups are here
