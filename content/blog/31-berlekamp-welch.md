@@ -35,7 +35,7 @@ LFSRの勉強をしていた際に、Berlekamp-Messeyのアルゴリズムが出
 
 $$
 \begin{aligned}
-E &\coloneqq \{a_i \mid y_i \neq f(a_i)\} \cr
+E &\coloneqq \\{a_i \mid y_i \neq f(a_i)\\} \cr
 e(x) &\coloneqq \prod_{i \in E} (x - a_i)
 \end{aligned}
 $$
