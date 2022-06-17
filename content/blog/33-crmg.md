@@ -98,7 +98,7 @@ $$
 法$m_1m_2$を外して、商を$l_i$とおくと次のようになる
 
 $$
-x_i = c_{i,0}x_0 + c_{i,1}x_1 + c_{i,2}x_2 + D_i - l_im_1m_2
+x_i = c_{i,0}x_0 + c_{i,1}x_1 + c_{i,2}x_2 + D_i + l_im_1m_2
 $$
 
 先に述べたように、$x_i$が短いベクトルの成分として現れるような格子を組んで簡約し、これらを求めることを考える。今回は次のような格子を組んだ。
@@ -275,7 +275,7 @@ class PRNG:
                 constant = A^3*Ds[0] + 2*A*B*Ds[0] + A^2*Ds[1] + C*Ds[0] + B*Ds[1] + A*Ds[2] + Ds[3]
 
             rhs = (v0_c * v0 + v1_c * v1 + v2_c * v2 + constant) % self.N
-            assert rhs, new_x1
+            assert rhs == new_x1
 
 
         self.__z.append(new_z)
