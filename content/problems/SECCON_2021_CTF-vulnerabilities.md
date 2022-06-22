@@ -151,11 +151,6 @@ type Vulnerability struct {
 
 > **NOTE** When querying with struct, GORM will only query with non-zero fields, that means if your field’s value is `0`, `''`, `false` or other [zero values](https://tour.golang.org/basics/12), it won’t be used to build query conditions, for example:
 
-> ```
-db.Where(&User{Name: "jinzhu", Age: 0}).Find(&users)  
-// SELECT * FROM users WHERE name = "jinzhu";
-> ```
-
 ということは`Name`に空文字を入れるとここの検索句は無視され、全てのレコードが返ってくる。このままでは`db.Where(&query).First(&vuln)`からもわかるように全件取ったうちの一番最初なのでおそらくHeartBleedのレコードが返される。しかし`Vulnerability`構造体を見ると`gorm.Model`という行があり、実はこの記述によって`Vunerability`構造体は`ID`や`CreatedAt`のようなメンバを持つ。したがって送信するクエリの`ID`にフラグが入っているレコードのIDを指定すればフラグを吸い出せる可能性がある(ちなみにこのIDは14)。
 
 最後に1つ問題があって、`Name`キーの空文字を指定すると`if name, ok := json["Name"]; !ok || name == "" || name == nil`によって弾かれる。ここで非常に悩んだが、実は発行されるクエリのwhere節は`where name = "<...>"`になる。このことからも察せられるように送信するJSONのキーを`Name`ではなく`name`(頭が小文字)とすれば、同じように`query`の`Name`メンバに値がセットされる。
