@@ -6,11 +6,9 @@ description = "About Me"
 
 ## Metadata
 
-* alias(es): Xornet
+* alias: Xornet
+  * pronounces just same as "hornet"
 * gender: male
-* email: einnotwendigesubel[@]gmail.com
-  * Please replace "[@]" to "@"
-  * In the future, the address will be changed
 
 ## Interest
 
@@ -29,6 +27,8 @@ description = "About Me"
 * Team: ./Vespiary (Co-Founder)
 
 ### Results
+
+Almost writeups are written in Japanese. If you are not familiar with Japanese and want to read in English, please contact me via Twitter ([@Xornet_Euphoria](https://twitter.com/Xornet_Euphoria)). And any question about my solutions is welcome.
 
 |event|result|note|writeup|
 |----|----|----|----|
@@ -57,13 +57,19 @@ description = "About Me"
 |TSG CTF 2021|3/775||[link](https://project-euphoria.dev/blog/23-tsg-2021/)|
 |ASIS CTF 2021|14/741||[link](https://project-euphoria.dev/blog/24-asis-2021/)|
 |BSides Ahmedabad CTF 2021|1/314||[link](https://project-euphoria.dev/blog/25-zer0pts-2-2021/)|
-|N1CTF 2021|7/601||[link](https://project-euphoria.dev/blog/26-n1ctf-2021/)|
-|CrewCTF 2022|5/758|||
-|ångstromCTF 2022|7/1180|||
+|N1CTF 2021|7/601||[link (English)](https://project-euphoria.dev/blog/26-n1ctf-2021/)|
+|CrewCTF 2022|5/758||[link](https://project-euphoria.dev/problems/2022-04-18/)|
+|ångstromCTF 2022|7/1180||[1](https://project-euphoria.dev/problems/prophet/) [2](https://project-euphoria.dev/problems/2022-05-05/)|
+|Google CTF 2022|27/382||[link](https://project-euphoria.dev/problems/google-ctf-2022-maybe-someday/)|
+
+### Writer
+
+* [SECCON CTF 2021 - CCC](https://github.com/SECCON/SECCON2021_online_CTF/tree/main/crypto/CCC)
+* [SECCON CTF 2021 - Sign Wars](https://github.com/SECCON/SECCON2021_online_CTF/tree/main/crypto/Sign_Wars)
 
 ### Links for CTF
 
-* [CTF Solutions](https://project-euphoria.dev/problems/)
+* [CTF Solutions (in this site)](https://project-euphoria.dev/problems/)
 * [CTFtime(team)](https://ctftime.org/team/80092)
 * [CTFtime(user)](https://ctftime.org/user/64130)
 * [github(team)](https://github.com/x-vespiary): team writeups are here
@@ -72,6 +78,6 @@ description = "About Me"
 
 ## Links
 
-* [old blog](https://xornet.hatenablog.com/): (stop update) Some articles(for example, writeups) will be moved to this blog.
+* [old blog (not updated)](https://xornet.hatenablog.com/): Written in Japanese
 * [Github](https://github.com/Xornet-Euphoria): I'm not a developer. I sometimes write CTF solutions.
 * [HackMD](https://hackmd.io/@Xornet): Archived CTF solutions and some articles about cryptography and mathematics.
