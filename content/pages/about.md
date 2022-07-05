@@ -60,7 +60,7 @@ Almost writeups are written in Japanese. If you are not familiar with Japanese a
 |N1CTF 2021|7/601||[link (English)](https://project-euphoria.dev/blog/26-n1ctf-2021/)|
 |CrewCTF 2022|5/758||[link](https://project-euphoria.dev/problems/2022-04-18/)|
 |ångstromCTF 2022|7/1180||[1](https://project-euphoria.dev/problems/prophet/) [2](https://project-euphoria.dev/problems/2022-05-05/)|
-|Google CTF 2022|27/382||[link](https://project-euphoria.dev/problems/google-ctf-2022-maybe-someday/)|
+|Google CTF 2022|27/382||[1](https://project-euphoria.dev/problems/google-ctf-2022-maybe-someday/) [2](https://project-euphoria.dev/problems/google-ctf-2022-cycling/)|
 
 ### Writer
 
