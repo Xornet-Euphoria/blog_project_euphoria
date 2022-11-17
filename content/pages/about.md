@@ -23,12 +23,12 @@ description = "About Me"
 
 ## CTF
 
-* Like: Crypto (public key cryptography), Pwn
+* Favorite: Crypto (public key cryptography), Pwn
 * Team: ./Vespiary (Co-Founder)
 
 ### Results
 
-Almost writeups are written in Japanese. If you are not familiar with Japanese and want to read in English, please contact me via Twitter ([@Xornet_Euphoria](https://twitter.com/Xornet_Euphoria)). And any question about my solutions is welcome.
+Almost writeups are written in Japanese. If you are not familiar with Japanese and want to read them in English, please contact me via Twitter ([@Xornet_Euphoria](https://twitter.com/Xornet_Euphoria)). And any question about my solutions is welcome.
 
 |event|result|note|writeup|
 |----|----|----|----|
@@ -66,6 +66,8 @@ Almost writeups are written in Japanese. If you are not familiar with Japanese a
 
 * [SECCON CTF 2021 - CCC](https://github.com/SECCON/SECCON2021_online_CTF/tree/main/crypto/CCC)
 * [SECCON CTF 2021 - Sign Wars](https://github.com/SECCON/SECCON2021_online_CTF/tree/main/crypto/Sign_Wars)
+* SECCON CTF 2022 - BBB
+* SECCON CTF 2022 - insufficient
 
 ### Links for CTF
 
