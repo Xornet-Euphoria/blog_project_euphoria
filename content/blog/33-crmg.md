@@ -396,5 +396,5 @@ print(f"[{_ys == true_y[:3]}] answer: {true_y[:3]}")
 
 ## Reference
 
-- [Breaking Combined Multiple Recursive Generators](http://www.secmem.org/blog/2021/10/24/Breaking-Combined-Multiple-Recursive-Generators/): pbctf 2021 - Yet Another PRNGの解説
+- [Breaking Combined Multiple Recursive Generators](https://infossm.github.io/blog/2021/10/24/Breaking-Combined-Multiple-Recursive-Generators/): pbctf 2021 - Yet Another PRNGの解説
 - [Attacks on Pseudo Random Number Generators Hiding a Linear Structure](https://eprint.iacr.org/2021/1204): ↑で取り上げられていた論文、本記事はこれをベースにして格子の使い方をやや変えている
