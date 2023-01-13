@@ -293,10 +293,6 @@ if __name__ == '__main__':
 
 `flag{random_flags_are_secure-2504b7e69c65676367aef1d9658821030011f8968a640b504d320846ab5d5029b}`
 
-## 感想
-
-当日は解けませんでしたが面白かった上に暗号を解く上でよく使うテクニックが入っていて良かったです。`q`が署名ごとに変わらない事を忘れていて、1回の署名で`q-1`を公約数に含むものを探して1時間溶かしたのは内緒です。
-
 ## リンク, 参考にしたWriteup
 
 - 問題リンク: <https://github.com/redpwn/redpwnctf-2020-challenges/tree/master/crypto/ratification>

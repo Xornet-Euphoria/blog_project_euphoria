@@ -378,10 +378,6 @@ if __name__ == '__main__':
 
 `flag{s0m3t1m3s_crypt0gr4ph1c_1mpl3m3nt4t10ns_f41l}`
 
-## 感想
-
-本番では無いですが、Writeupを見ずに自力で解けたCryptoの中では今年度一番難しかったです。あと常設を除くと初の自力で解けた楕円曲線問題でした。
-
 ## リンク
 
 - 運営リポジトリ: <https://github.com/redpwn/redpwnctf-2020-challenges/tree/master/crypto/speedy-signatures>

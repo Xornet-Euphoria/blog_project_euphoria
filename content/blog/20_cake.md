@@ -200,16 +200,6 @@ Flag: `CakeCTF{ju57_d0_LLL_th3n_s01v3_CVP_wi7h_babai}`
 
 3rd Bloodだった、そういえば格子の拙記事にはCVPは無かったので気が向いたら第2弾を書きます(本当ですか?)。
 
-## 感想
-
-ワクチン打ってる間にSolvesが多いCryptoは全部解かれたのと、土曜夜～日曜昼にかけて副反応に苦しんでいたのでチームに全然貢献出来なかったのは残念でしたが、2位だったので景品があるらしいです、やったね。ちなみに1位はzer0ptsさんです、おめでとうございます。
-
-Party Ticketが解けなかったのは残念でした。しかもHastad's Broadcast AttackのWikipedia(en)を読んだり、チームに提供していれば一般化について知って解けたはずで、一度参考にしようとチーム内Wikiの項目を参照したのにWikipediaの方を参照しなかったのは本当に後悔しています。
-
-自身の話はこの辺にして、昨年のInterKosen CTF 2020に引き続き、このような楽しいCTFを開催してくださったinsecureの皆様、ありがとうございました。来年も多分出るので開催してください。
-
-The cake is not a lie, but the party is a lie...
-
 ## Links
 
 - [運営開催記(ptr-yudaiさん)](https://ptr-yudai.hatenablog.com/entry/2021/08/30/000015)
