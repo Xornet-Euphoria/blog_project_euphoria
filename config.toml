@@ -3,7 +3,7 @@ base_url = "https://project-euphoria.dev"
 
 # metadata
 title = "Project Euphoria"
-description = "CTFが好き"
+description = "Articles about CTF"
 default_language = "ja"
 
 # feed
