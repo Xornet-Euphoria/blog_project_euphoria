@@ -58,8 +58,7 @@ Almost writeups are written in Japanese. If you are not familiar with Japanese a
 |CrewCTF 2022|5/758||[link](https://project-euphoria.dev/problems/2022-04-18/)|
 |ångstromCTF 2022|7/1180||[1](https://project-euphoria.dev/problems/prophet/) [2](https://project-euphoria.dev/problems/2022-05-05/)|
 |Google CTF 2022|27/382||[1](https://project-euphoria.dev/problems/google-ctf-2022-maybe-someday/) [2](https://project-euphoria.dev/problems/google-ctf-2022-cycling/)|
-
-I plan to update this table but I'm too lazy sorry...
+|LINE CTF 2023|10/477||[Japanese](@/blog/40-line_ctf_2023.md), [English](https://github.com/x-vespiary/writeup/tree/master/2023/03-line)|
 
 ### Writer
 
