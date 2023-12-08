@@ -83,31 +83,31 @@ if __name__ == "__main__":
 
 まず1. の1文字ずつの暗号化であるが、どのような暗号文になるかがわかっていればその暗号文から逆に辿る事で平文を特定出来る。ElGamalは確率的アルゴリズムを使っているので毎回暗号文は異なるのだが、暗号文が2つのペアであることからこれを上手く使う(後述)とそのランダム性を消す事が出来る。
 
-続いて2. についてだが、このスクリプトで使用されている素数{{katex(body="p")}}は`getStrongPrime`で生成しているにも関わらず位数{{katex(body="p-1")}}は次のように素因数分解出来る。
+続いて2. についてだが、このスクリプトで使用されている素数$p$は`getStrongPrime`で生成しているにも関わらず位数$p-1$は次のように素因数分解出来る。
 
 $$
 p - 1 = 2 \times 3 \times 5 \times 19 \times 5710354319 \times C
 $$
 
-ここで{{katex(body="C")}}はなんらかの大きな数である。これより、Pohlig-Hellmanアルゴリズムを5710354319までの数で適用すれば{{katex(body="p")}}を法とする離散対数問題は{{katex(body="2 \times 3 \times 5 \times 19 \times 5710354319")}}を法とする解を得る事が出来る。
+ここで$C$はなんらかの大きな数である。これより、Pohlig-Hellmanアルゴリズムを5710354319までの数で適用すれば$p$を法とする離散対数問題は$2 \times 3 \times 5 \times 19 \times 5710354319$を法とする解を得る事が出来る。
 
 ### Pohlig-Hellmanアルゴリズムの部分適用
 
-生成元を{{katex(body="g")}}、公開鍵を{{katex(body="h")}}とおくと、秘密鍵{{katex(body="x")}}は{{katex(body="h \equiv g^x \bmod p")}}を満たしている。ここで、Pohlig-Hellmanアルゴリズムをそのまま使うのでは無く、一部の素因数において適用すると、この素因数の積{{katex(body="P := \prod_i p_i")}}を法とした解を得る事が出来る。ここで求められた解を{{katex(body="x'")}}とおくと本来の解{{katex(body="x")}}との間に次が成り立つ。
+生成元を$g$、公開鍵を$h$とおくと、秘密鍵$x$は$h \equiv g^x \bmod p$を満たしている。ここで、Pohlig-Hellmanアルゴリズムをそのまま使うのでは無く、一部の素因数において適用すると、この素因数の積$P := \prod_i p_i$を法とした解を得る事が出来る。ここで求められた解を$x'$とおくと本来の解$x$との間に次が成り立つ。
 
 $$
 x = x' + kP = x' + k \frac{p-1}{C}
 $$
 
-但し{{katex(body="k")}}は何らかの整数である。
+但し$k$は何らかの整数である。
 
-ここで{{katex(body="g")}}を{{katex(body="x")}}乗すると
+ここで$g$を$x$乗すると
 
 $$
 g^x \equiv g^{x'} g^{k \frac{p-1}{C}} \bmod p
 $$
 
-のようになり、これを更に両辺{{katex(body="C")}}乗すると
+のようになり、これを更に両辺$C$乗すると
 
 $$
 g^{Cx} \equiv g^{Cx'} g^{k(p-1)} \equiv g^{Cx'} \bmod p
@@ -117,19 +117,19 @@ $$
 
 ### 暗号文から平文の特定
 
-ここでElGamal暗号の暗号文は2つの数字のペア{{katex(body="(c_1, c_2)")}}であり、{{katex(body="c_1 \equiv g^r \bmod p, \ c_2 \equiv mh^r \bmod p")}}を満たしている。先程求めた{{katex(body="x'")}}で復号を試みてみると次のようになる。
+ここでElGamal暗号の暗号文は2つの数字のペアであり、$c_1 \equiv g^r \bmod p, \ c_2 \equiv mh^r \bmod p$を満たしている。先程求めた$x'$で復号を試みてみると次のようになる。
 
 $$
 \frac{c_2}{c_1^{x'}} \equiv \frac{mh^r}{g^{rx'}} \equiv m g^{r(x - x')} \bmod p
 $$
 
-ここで前節で求めた{{katex(body="g^{Cx} \equiv g^{Cx'}")}}を利用すると前式を{{katex(body="C")}}乗する事で次のようになる。
+ここで前節で求めたを利用すると前式を$C$乗する事で次のようになる。
 
 $$
 \left(\frac{c_2}{c_1^{x'}}\right)^C \equiv m^C g^{r(Cx - Cx')} \equiv m^C \bmod p
 $$
 
-ここで{{katex(body="m")}}は1文字である事から{{katex(body="m^C \bmod p")}}を全ての{{katex(body="m")}}について計算しておく事で{{katex(body="\left(\frac{c_2}{c_1^{x'}}\right)^C")}}と照合すると、暗号文ペアに対応する{{katex(body="m")}}が判明する。
+ここで$m$は1文字である事から$m^C \bmod p$を全ての$m$について計算しておく事でと照合すると、暗号文ペアに対応する$m$が判明する。
 
 ## Code
 

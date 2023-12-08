@@ -87,7 +87,7 @@ if __name__ == "__main__":
 
 ## [Rev] Wait
 
-これまたCrackMe、しかもフラグのフォーマットは`^HarekazeCTF\\{ID[A-Z]{4}X\\}$`なので{{katex(body="26^{4}=456976")}}回の試行で済む...と思いきや後述する罠がある。
+これまたCrackMe、しかもフラグのフォーマットは`^HarekazeCTF\\{ID[A-Z]{4}X\\}$`なので回の試行で済む...と思いきや後述する罠がある。
 
 デコンパイル結果全体が長いのでGhidraの結果は割愛するが、入力毎に`system("sleep 3.00")`が実行してから入力のチェックをしているため愚直に総当りすると最大で約137万秒、つまり16日ぐらいかかる計算になる。なおこのCTFは24時間しか開催されない。
 
@@ -353,11 +353,11 @@ print(f"{c3=}")
 
 ```
 
-通常のRSAで公開される値に加えて{{katex(body="N=pq")}}における{{katex(body="p, q")}}を使い、{{katex(body="N")}}を法として{{katex(body="(p+q)^e, (p-q)^e")}}もくれる。
+通常のRSAで公開される値に加えて$N=pq$における$p, q$を使い、$N$を法としてもくれる。
 
-これは二項定理よりそれぞれ{{katex(body="p^{65537} + q^{65537}, p^{65537} - q^{65537}")}}になる。したがってこの2つを足して{{katex(body="N")}}を法とした2の逆数を掛けると{{katex(body="p^{65537}")}}が手に入る。
+これは二項定理よりそれぞれになる。したがってこの2つを足して$N$を法とした2の逆数を掛けるとが手に入る。
 
-後は(自分の記事で申し訳ないですが)[この記事](https://project-euphoria.dev/blog/8-gcd-for-crypto/)の真ん中の問題と同様に、{{katex(body="p")}}の倍数を{{katex(body="p")}}の倍数で割った余りも{{katex(body="p")}}の倍数となる事を利用し、最大公約数から{{katex(body="p")}}を抽出することが出来る。
+後は(自分の記事で申し訳ないですが)[この記事](https://project-euphoria.dev/blog/8-gcd-for-crypto/)の真ん中の問題と同様に、$p$の倍数を$p$の倍数で割った余りも$p$の倍数となる事を利用し、最大公約数から$p$を抽出することが出来る。
 
 ```Python
 from xcrypto.result import Result
@@ -419,13 +419,13 @@ print(f"{zs=}")
 
 `xs`の各要素`x`に対して`x * flag`を`p`で割ったもののMSBを複数くれる。ここから共通の係数である`flag`を求める問題はHidden Number Problemと呼ばれ、解が小さいなら格子基底縮小で解ける可能性がある。
 
-まず、次のように{{katex(body="y_i")}}を既知部分{{katex(body="z_i")}}と未知部分{{katex(body="y_i'")}}に分割する
+まず、次のように$y_i$を既知部分$z_i$と未知部分$y_i'$に分割する
 
 $$
 y_i = z_i + y_i'
 $$
 
-この上で{{katex(body="y_i \equiv x_i \cdot \mathrm{flag} \bmod p")}}を利用し、合同式を外して整理すると、ある整数{{katex(body="l_i")}}を利用して
+この上でを利用し、合同式を外して整理すると、ある整数$l_i$を利用して
 
 $$
 y_i' = l_i p + x_i \cdot \mathrm{flag} - z_i
@@ -441,11 +441,11 @@ L = \left(
     \right)
 $$
 
-ここで{{katex(body="|x_i|, |\mathrm{flag}|")}}はそれぞれ{{katex(body="x_i")}}の平均bit数と{{katex(body="\mathrm{flag}")}}のbit数である。
+ここではそれぞれ$x_i$の平均bit数とのbit数である。
 
-これに右から{{katex(body="A = (l_0, \dots, l_4, \mathrm{flag}, 1)^{\mathrm{T}}")}}を掛けると{{katex(body="B = LA = (y_0', \dots, y_4',  2^{|x_i|-|\mathrm{flag}|} \cdot flag, 2^{|x_i|})^{\mathrm{T}}")}}が現れる。このベクトルは{{katex(body="L")}}の基底に比べてサイズが小さいのでLLLをしたら上手く現れてくれることが期待出来る。{{katex(body="B")}}から{{katex(body="y_i")}}を復元してその結果からフラグが導かれる。
+これに右からを掛けるとが現れる。このベクトルは$L$の基底に比べてサイズが小さいのでLLLをしたら上手く現れてくれることが期待出来る。$B$から$y_i$を復元してその結果からフラグが導かれる。
 
-(書いてて思ったけどこれ{{katex(body="B")}}の第3成分(0-origin)を係数で割れば出てくるじゃん...)
+(書いてて思ったけどこれ$B$の第3成分(0-origin)を係数で割れば出てくるじゃん...)
 
 Sagemathを使って解いた↓
 
