@@ -141,13 +141,13 @@ $$
 N = (4s + 2(k_1 + k_2) + 1)\cdot 2^{1024} + (2(k_1 + k_2) + 2) \cdot 2^{512} + 1
 $$
 
-この式を$k_1 + k_2$が変数の方程式とみなすとこれを求めることが出来ます。
+この式を{{katex(body="k_1 + k_2")}}が変数の方程式とみなすとこれを求めることが出来ます。
 
-また、既に$k_1k_2$は与えられている($n$で法が取られていますが、明らかに$k_1k_2 \lt n$なので関係ない)ので、$k_1 + k_2$を求めることが出来れば2次方程式の解と係数の関係を利用してどちらも求めることが出来ます。
+また、既に{{katex(body="k_1k_2")}}は与えられている({{katex(body="n")}}で法が取られていますが、明らかに{{katex(body="k_1k_2 \lt n")}}なので関係ない)ので、{{katex(body="k_1 + k_2")}}を求めることが出来れば2次方程式の解と係数の関係を利用してどちらも求めることが出来ます。
 
-というわけで$k_1, k_2$が求められたので後は$p,q$を求めて復号するだけです。
+というわけで{{katex(body="k_1, k_2")}}が求められたので後は{{katex(body="p,q")}}を求めて復号するだけです。
 
-なお、RSAの2つの素因数、$p,q$で似たこと($p+q, pq$からこの2つを求める)をする問題がよく出て、それを解くための関数を自作ライブラリに入れていたので$k_1 + k_2$求めてからは速かったです。
+なお、RSAの2つの素因数、{{katex(body="p,q")}}で似たこと({{katex(body="p+q, pq")}}からこの2つを求める)をする問題がよく出て、それを解くための関数を自作ライブラリに入れていたので{{katex(body="k_1 + k_2")}}求めてからは速かったです。
 
 ### `k1 + k2`の導出
 
@@ -226,13 +226,13 @@ $$
 s(p^2 + q^2) \equiv p^3 - 20211219\cdot q \mod (p^2q^2)
 $$
 
-ここで合同式を使わない形にしてから$p$で法を取ってみる事を考えます。すると次のようになります。
+ここで合同式を使わない形にしてから{{katex(body="p")}}で法を取ってみる事を考えます。すると次のようになります。
 
 $$
 sq^2 + 20211219 \cdot q \equiv 0 \mod p
 $$
 
-さて、ここでCoppersmith's Attackに関して忘れがちな事実として、法$N$の因数を法とした場合でも解を求められるというのがあります。詳しくは次を参照してください。
+さて、ここでCoppersmith's Attackに関して忘れがちな事実として、法{{katex(body="N")}}の因数を法とした場合でも解を求められるというのがあります。詳しくは次を参照してください。
 
 - [Dense univariate polynomials over \(\ZZ/n\ZZ\), implemented using NTL — Sage 9.4 Reference Manual: Polynomials](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_modn_dense_ntl.html#sage.rings.polynomial.polynomial_modn_dense_ntl.small_roots)
 - [SageMathを使ってCoppersmith's Attackをやってみる - ももいろテクノロジー](https://inaz2.hatenablog.com/entry/2016/01/20/022936): 「素数pの上位bitまたは下位bitがわかっている場合」の節
@@ -302,7 +302,7 @@ print(f"c2 = {hex(c2)}")
 
 ```
 
-2つの公開鍵$n_1, n_2$の構成方法を見るとわかるようにその素因数に近い2つの数`p`, `next_prime(p)`が使われています。ということはApproximate GCDが使えそうです。
+2つの公開鍵{{katex(body="n_1, n_2")}}の構成方法を見るとわかるようにその素因数に近い2つの数`p`, `next_prime(p)`が使われています。ということはApproximate GCDが使えそうです。
 
 Approximate GCDについては、適用できる状況以外に正直よくわかっていないので詳しくは次の資料をご覧ください。
 
