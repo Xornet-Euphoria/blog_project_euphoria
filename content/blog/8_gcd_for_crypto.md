@@ -48,27 +48,27 @@ print 'enc =', pow(bytes_to_long(flag), e, n)
 
 ### Writeup
 
-注目するのは`t_p = pow(s*p + 1, (d-1)/(1 << r), n)`で定義されているパラメータである。ここで法を取らない`t_p`は二項定理から{{ katex(body="p") }}の1次以上の項をまとめると整数{{ katex(body="k") }}を用いて次のようになる。
+注目するのは`t_p = pow(s*p + 1, (d-1)/(1 << r), n)`で定義されているパラメータである。ここで法を取らない`t_p`は二項定理から$p$の1次以上の項をまとめると整数$k$を用いて次のようになる。
 
 $$
 t_p = (s_p + 1)^{d'} = kp + 1
 $$
 
-ではこれを{{katex(body="N = pq")}}で割る事を考える。{{katex(body="k")}}を{{katex(body="q")}}で割って、{{katex(body="k = rq + \alpha")}}とおく、但し{{katex(body="r \in \mathbb{Z}, \ 0 \leq \alpha \lt q")}}である。この両辺に{{katex(body="p")}}をかけて移項すると次のようになる。
+ではこれを$N = pq$で割る事を考える。$k$を$q$で割って、$k = rq + \alpha$とおく、但し$r \in \mathbb{Z}, \ 0 \leq \alpha \lt q$である。この両辺に$p$をかけて移項すると次のようになる。
 
 $$
 kp - \alpha p = rpq = rN
 $$
 
-したがって{{katex(body="kp \equiv \alpha p \bmod N")}}が成立することから{{katex(body="t_p")}}に関して次が成り立つ事になる。
+したがって$kp \equiv \alpha p \bmod N$が成立することから$t_p$に関して次が成り立つ事になる。
 
 $$
 t_p - 1 \equiv \alpha p \bmod N
 $$
 
-したがって{{katex(body="t_p - 1")}}を{{katex(body="N")}}で割った結果は{{katex(body="p")}}の倍数になる。
+したがって$t_p - 1$を$N$で割った結果は$p$の倍数になる。
 
-これで{{katex(body="N = pq")}}と合わせて{{katex(body="p")}}の倍数が2つ揃ったことになるのでこれの最大公約数をとると{{katex(body="p")}}が吸い出される事が期待できる。その結果から{{katex(body="N")}}の素因数分解が出来るので後はこの結果を用いて普通にRSAの復号をするだけである。
+これで$N = pq$と合わせて$p$の倍数が2つ揃ったことになるのでこれの最大公約数をとると$p$が吸い出される事が期待できる。その結果から$N$の素因数分解が出来るので後はこの結果を用いて普通にRSAの復号をするだけである。
 
 ### Code
 
@@ -165,47 +165,47 @@ File.write('pubkey.json', JSON.dump(rsa.pubkey))
 
 ```
 
-CRT-RSAが実装されているが、公開鍵で{{katex(body="N")}}の代わりに秘密鍵である{{katex(body="d")}}をくれる。ついでにCRT-RSAで使われるパラメータである{{katex(body="cf := q^{-1} \bmod p")}}もくれる。
+CRT-RSAが実装されているが、公開鍵で$N$の代わりに秘密鍵である$d$をくれる。ついでにCRT-RSAで使われるパラメータである$cf := q^{-1} \bmod p$もくれる。
 
 ### Writeup
 
-#### {{katex(body="\phi(N)")}}の導出
+#### $\phi(N)$の導出
 
-ひとまず使える数字を増やしたい。現状の手持ちは{{katex(body="e, d, cf")}}しか無いので{{katex(body="ed \equiv 1 \bmod \phi(N)")}}を利用して{{katex(body="\phi(N)")}}を導出する。この合同式から次が成り立つような整数{{katex(body="k")}}が存在する。
+ひとまず使える数字を増やしたい。現状の手持ちは$e, d, cf$しか無いので$ed \equiv 1 \bmod \phi(N)$を利用して$\phi(N)$を導出する。この合同式から次が成り立つような整数$k$が存在する。
 
 $$
 ed - 1 = k\phi(N)
 $$
 
-ここで{{katex(body="d \lt \phi(N)")}}である事から{{katex(body="1 \leq k \leq e = 65537")}}が成り立つ。これは十分探索可能な範囲なので{{katex(body="k")}}が{{katex(body="ed-1")}}の約数となってかつ{{katex(body="\phi(N)")}}が2048bitになるものを探す。
+ここで$d \lt \phi(N)$である事から$1 \leq k \leq e = 65537$が成り立つ。これは十分探索可能な範囲なので$k$が$ed-1$の約数となってかつ$\phi(N)$が2048bitになるものを探す。
 
 #### 片方の素数の導出
 
-これで{{katex(body="\phi(N) = (p-1)(q-1)")}}が手に入ったのでこれを利用して片方の素数を求めたい。これに{{katex(body="cf \equiv q^{-1} \bmod p")}}をかけて{{katex(body="p")}}で法を取ると次のようになる。
+これで$\phi(N) = (p-1)(q-1)$が手に入ったのでこれを利用して片方の素数を求めたい。これに$cf \equiv q^{-1} \bmod p$をかけて$p$で法を取ると次のようになる。
 
 $$
 cf \cdot \phi(N) \equiv cf\cdot p(q-1) - cf (q-1) \equiv cf(1 - q) \equiv cf - 1 \bmod p
 $$
 
-この結果から{{katex(body="cf \cdot \phi(N) - cf + 1")}}は{{katex(body="p")}}の倍数となる。そこで{{katex(body="k'p := cf \cdot \phi(N) - cf + 1")}}のようにおく。
+この結果から$cf \cdot \phi(N) - cf + 1$は$p$の倍数となる。そこで$k'p := cf \cdot \phi(N) - cf + 1$のようにおく。
 
-ところで任意整数{{katex(body="a")}}に対して、{{katex(body="a^\phi(N) = a^{(p-1)(q-1)} \equiv 1 \mod pq")}}である事から{{katex(body="a^{\phi(N)} - 1")}}は{{katex(body="pq")}}の倍数でありすなわち{{katex(body="p")}}の倍数にもなる。そこで{{katex(body="mp := a^{\phi(N)} - 1")}}とおく。
+ところで任意整数$a$に対して、$a^\phi(N) = a^{(p-1)(q-1)} \equiv 1 \mod pq$である事から$a^{\phi(N)} - 1$は$pq$の倍数でありすなわち$p$の倍数にもなる。そこで$mp := a^{\phi(N)} - 1$とおく。
 
-このような{{katex(body="mp")}}に対して{{katex(body="lp")}}である別の{{katex(body="p")}}の倍数{{katex(body="lp")}}で法をとる事を考える。
+このような$mp$に対して$lp$である別の$p$の倍数$lp$で法をとる事を考える。
 
-前問同様に{{katex(body="m")}}を{{katex(body="l")}}で割ると{{katex(body="m = rl + \alpha")}}となる2つの整数{{katex(body="r, \ 0 \leq \alpha \lt l")}}が存在することがわかる。これの両辺に{{katex(body="p")}}をかけると{{katex(body="mp = r(lp) + \alpha p")}}となる事から
+前問同様に$m$を$l$で割ると$m = rl + \alpha$となる2つの整数$r, \ 0 \leq \alpha \lt l$が存在することがわかる。これの両辺に$p$をかけると$mp = r(lp) + \alpha p$となる事から
 
 $$
 mp \equiv \alpha p \bmod lp
 $$
 
-が成立する。よって{{katex(body="mp")}}を別の{{katex(body="p")}}の倍数である{{katex(body="lp")}}で割った結果も{{katex(body="p")}}の倍数となる。
+が成立する。よって$mp$を別の$p$の倍数である$lp$で割った結果も$p$の倍数となる。
 
-というわけで{{katex(body="mp")}}には適当な{{katex(body="a")}}を利用した値を、{{katex(body="lp")}}には先程計算した{{katex(body="k'p")}}を適用すると{{katex(body="\alpha p")}}に相当する新しい{{katex(body="p")}}の倍数が手に入る事が期待できる。
+というわけで$mp$には適当な$a$を利用した値を、$lp$には先程計算した$k'p$を適用すると$\alpha p$に相当する新しい$p$の倍数が手に入る事が期待できる。
 
-このようにして{{katex(body="a")}}を変えて{{katex(body="p")}}の倍数を複数用意してから最大公約数を取れば高い確率で{{katex(body="p")}}が抽出出来る。
+このようにして$a$を変えて$p$の倍数を複数用意してから最大公約数を取れば高い確率で$p$が抽出出来る。
 
-これで{{katex(body="p")}}が手に入ったので後は{{katex(body="\phi(N)")}}からもう1つの素因数である{{katex(body="q")}}を計算でき、RSA暗号の復号手順を経るとフラグが手に入る。
+これで$p$が手に入ったので後は$\phi(N)$からもう1つの素因数である$q$を計算でき、RSA暗号の復号手順を経るとフラグが手に入る。
 
 ### Code
 
@@ -328,15 +328,15 @@ print("c =", c)
 
 #### 公約式の構成
 
-フラグが根の1つになる{{katex(body="\mathbb{Z}_n")}}上の多項式を2つ用意すればそれの公約式をとることで{{katex(body="x - flag")}}が現れてくれそうである。よってこれを楕円曲線上の2倍算の結果とRSA暗号化の結果から構成する。
+フラグが根の1つになる$\mathbb{Z}_n$上の多項式を2つ用意すればそれの公約式をとることで$x - flag$が現れてくれそうである。よってこれを楕円曲線上の2倍算の結果とRSA暗号化の結果から構成する。
 
-RSAの方は簡単である。{{katex(body="(flag + t)^e \equiv c \bmod n")}}なので次の式の根の1つが{{katex(body="x=flag")}}になる。
+RSAの方は簡単である。$(flag + t)^e \equiv c \bmod n$なので次の式の根の1つが$x=flag$になる。
 
 $$
 f_1(x) := (x + t)^e - c \bmod n
 $$
 
-続いて楕円曲線上の演算について考える。`P`を{{katex(body="P := (x_p,  y_p)")}}とする(よって{{katex(body="x_p = flag")}}である)。また、これを2倍した点である`Q`を{{katex(body="Q := (x_q, y_q)")}}とおく。
+続いて楕円曲線上の演算について考える。`P`を$P := (x_p,  y_p)$とする(よって$x_p = flag$である)。また、これを2倍した点である`Q`を$Q := (x_q, y_q)$とおく。
 
 楕円曲線上の点の2倍算より次が成り立つ。
 
@@ -344,9 +344,9 @@ $$
 Q = 2P = (s^2 - 2x_p, s(x_p - (s^2 - 2x_p)) - y_p)
 $$
 
-ここで{{katex(body="s")}}は{{katex(body="P")}}における傾きを表しており、{{katex(body="s = \frac{3x_p^2 + a}{2y_p} = \pm \frac{3x_p^2+a}{2\sqrt{x_p^3 + ax_p + b}}")}}である(符号が正負どちらになるかは{{katex(body="P")}}がわからないためこの地点では不明)。
+ここで$s$は$P$における傾きを表しており、$s = \frac{3x_p^2 + a}{2y_p} = \pm \frac{3x_p^2+a}{2\sqrt{x_p^3 + ax_p + b}}$である(符号が正負どちらになるかは$P$がわからないためこの地点では不明)。
 
-y座標まで見ると結構複雑だがx座標だけ見るとそうでも無い。おまけに{{katex(body="s")}}が2乗されていることから正負を考えなくて良さそうである。よってこちらだけを考えると次が成り立つ。
+y座標まで見ると結構複雑だがx座標だけ見るとそうでも無い。おまけに$s$が2乗されていることから正負を考えなくて良さそうである。よってこちらだけを考えると次が成り立つ。
 
 $$
 s^2 - 2x_p \equiv \frac{9x_p^4 + 6ax_p^2 + a^2}{4(x_p^3 + ax_p + b)} - 2x_p \equiv \frac{x_p^4 - 2ax_p^2 + a^2 - 8bx_p}{4(x_p^3 + ax_p + b)} \equiv \frac{(x_p^2 - a)^2 - 8bx_p}{4(x_p^3 + ax_p + b)} \equiv x_q \bmod n
@@ -364,9 +364,9 @@ $$
 f_2(x) := (x^2 - a)^2 - 8bx - 4x_q(x^3 + ax + b) \bmod n
 $$
 
-と定義した多項式{{katex(body="f_2(x)")}}の根は{{katex(body="x = x_p = flag")}}になる。
+と定義した多項式$f_2(x)$の根は$x = x_p = flag$になる。
 
-これで根が共に{{katex(body="x = flag")}}である多項式{{katex(body="f_1, f_2")}}が得られたので、後はこの2式の最大公約式を取ると{{katex(body="x - flag")}}である事が期待出来、その切片の絶対値を取ればフラグになる。
+これで根が共に$x = flag$である多項式$f_1, f_2$が得られたので、後はこの2式の最大公約式を取ると$x - flag$である事が期待出来、その切片の絶対値を取ればフラグになる。
 
 ### Code
 
