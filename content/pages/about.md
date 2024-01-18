@@ -8,7 +8,6 @@ description = "About Me"
 
 * alias: Xornet
   * pronounces just same as "hornet"
-* gender: male
 
 ## Interest
 
@@ -59,6 +58,7 @@ Almost writeups are written in Japanese. If you are not familiar with Japanese a
 |ångstromCTF 2022|7/1180||[1](https://project-euphoria.dev/problems/prophet/) [2](https://project-euphoria.dev/problems/2022-05-05/)|
 |Google CTF 2022|27/382||[1](https://project-euphoria.dev/problems/google-ctf-2022-maybe-someday/) [2](https://project-euphoria.dev/problems/google-ctf-2022-cycling/)|
 |LINE CTF 2023|10/477||[Japanese](@/blog/40-line_ctf_2023.md), [English](https://github.com/x-vespiary/writeup/tree/master/2023/03-line)|
+|zer0pts CTF 2023|8/476|||[link](https://project-euphoria.dev/problems/zer0pts-ctf-2023-mimikyu/)|
 
 ### Writer
 
@@ -67,6 +67,7 @@ Almost writeups are written in Japanese. If you are not familiar with Japanese a
 * [SECCON CTF 2022 Quals - BBB](https://github.com/SECCON/2022_ctf_quals/tree/main/crypto/bbb)
 * [SECCON CTF 2022 Quals - insufficient](https://github.com/SECCON/2022_ctf_quals/tree/main/crypto/insufficient)
 * SECCON CTF 2022 Final - not new PRNG
+* SECCON CTF 2023 Quals - Sickle
 
 ### Links for CTF
 
