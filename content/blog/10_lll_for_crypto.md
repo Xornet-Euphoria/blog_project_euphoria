@@ -18,7 +18,7 @@ tags = ["CTF", "Writeup", "Crypto", "LLL", "Lattice"]
 - HITCON CTF 2019 Quals - not so hard RSA
 - pbctf 2020 - LeaK
 
-※フラグが出るソルバを記載していますが、説明等に誤りがありましたら[@Xornet_Euphoria](https://twitter.com/Xornet_Euphoria)までお願いします(スパム対策でDMは開放していません、リプライだと助かります)。
+※フラグが出るソルバを記載していますが、説明等に誤りがありましたら[@Xornet_](https://twitter.com/Xornet_)までお願いします(スパム対策でDMは開放していません、リプライだと助かります)。
 
 ## Prerequisite
 

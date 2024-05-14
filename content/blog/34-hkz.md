@@ -6,7 +6,7 @@ date = 2022-09-10
 tags = ["Lattice"]
 +++
 
-※ Typo、記号や添字の誤り、そもそも証明の誤りがありましたら、[Twitter (@Xornet_Euphoria)](https://twitter.com/xornet_euphoria)へリプライかDM(誰でも送れます)を飛ばすか、[このブログのリポジトリ](https://github.com/Xornet-Euphoria/blog_project_euphoria)でIssueを立てたりプルリクを送ったりしてください。
+※ Typo、記号や添字の誤り、そもそも証明の誤りがありましたら、[Twitter (@Xornet_)](https://twitter.com/Xornet_)へリプライかDM(誰でも送れます)を飛ばすか、[このブログのリポジトリ](https://github.com/Xornet-Euphoria/blog_project_euphoria)でIssueを立てたりプルリクを送ったりしてください。
 
 読者が格子についての知識をある程度有している前提で書いてます。下記のサイトや書籍を読んでいると読みやすいと思います。
 

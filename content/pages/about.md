@@ -24,7 +24,7 @@ description = "About Me"
 
 ### Results
 
-Almost writeups are written in Japanese. If you are not familiar with Japanese and want to read them in English, please contact me via Twitter ([@Xornet_Euphoria](https://twitter.com/Xornet_Euphoria)). And any question about my solutions is welcome.
+Almost writeups are written in Japanese. If you are not familiar with Japanese and want to read them in English, please contact me via Twitter ([@Xornet_](https://twitter.com/Xornet_)). And any question about my solutions is welcome.
 
 |event|result|note|writeup|
 |----|----|----|----|
@@ -80,6 +80,5 @@ Almost writeups are written in Japanese. If you are not familiar with Japanese a
 
 ## Links
 
-* [old blog (not updated)](https://xornet.hatenablog.com/): Written in Japanese
 * [Github](https://github.com/Xornet-Euphoria): I'm not a developer. I sometimes write CTF solutions.
 * [HackMD](https://hackmd.io/@Xornet): Archived CTF solutions and some articles about cryptography and mathematics.

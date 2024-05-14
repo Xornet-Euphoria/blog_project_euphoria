@@ -27,7 +27,7 @@ taxonomies = [
 
 [extra]
 # Put all your custom variables here
-twitter = "Xornet_Euphoria"
+twitter = "Xornet_"
 
 # terminimal
 accent_color = "green"
@@ -53,6 +53,6 @@ menu_items = [
     {name = "archive", url = "$BASE_URL/archive"},
 
     # set newtab to true to make the link open in new tab
-    {name = "Twitter", url = "https://twitter.com/Xornet_Euphoria", newtab = true},
+    {name = "Twitter", url = "https://twitter.com/Xornet_", newtab = true},
     {name = "Repository", url = "https://github.com/Xornet-Euphoria/blog_project_euphoria", newtab = true}
 ]
