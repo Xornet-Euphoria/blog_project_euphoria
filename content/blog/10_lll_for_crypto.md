@@ -1,5 +1,5 @@
 +++
-title = "LLLでCrypto問題を解く"
+title = "格子基底簡約でCrypto問題を解く"
 date = 2020-12-23
 
 [taxonomies]
@@ -8,7 +8,7 @@ tags = ["CTF", "Writeup", "Crypto", "LLL", "Lattice"]
 
 この記事は[CTF Advent Calendar 2020](https://adventar.org/calendars/5338)の23日目の記事です。1つ前の記事はakiko_pusuさんの[freeCodeCampからpicoCTF。ちょっとは進んでる？](https://daily-postit.hatenablog.com/entry/20201221-freecodecamp-picoCTF-2)でした。
 
-最近のCrypto問題ではLLL(というか格子基底縮小)を使って解く問題が増えている気がします。今年の晩夏, 秋ぐらいまで全く触れてなかったのですが、最近その出現頻度を見てやる気が出たので目についた問題を数問取り上げて解きました。というわけでWriteupを書きます。
+最近のCrypto問題ではLLL(というか格子基底簡約)を使って解く問題が増えている気がします。今年の晩夏, 秋ぐらいまで全く触れてなかったのですが、最近その出現頻度を見てやる気が出たので目についた問題を数問取り上げて解きました。というわけでWriteupを書きます。
 
 <!-- more -->
 
@@ -18,7 +18,7 @@ tags = ["CTF", "Writeup", "Crypto", "LLL", "Lattice"]
 - HITCON CTF 2019 Quals - not so hard RSA
 - pbctf 2020 - LeaK
 
-※フラグが出るソルバを記載していますが、説明等に誤りがありましたら[@Xornet_](https://twitter.com/Xornet_)までお願いします(スパム対策でDMは開放していません、リプライだと助かります)。
+※フラグが出るソルバを記載していますが、説明等に誤りがありましたら[@Xornet_](https://twitter.com/Xornet_)までお願いします。
 
 ## Prerequisite
 
