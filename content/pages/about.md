@@ -66,8 +66,9 @@ Almost writeups are written in Japanese. If you are not familiar with Japanese a
 * [SECCON CTF 2021 - Sign Wars](https://github.com/SECCON/SECCON2021_online_CTF/tree/main/crypto/Sign_Wars)
 * [SECCON CTF 2022 Quals - BBB](https://github.com/SECCON/2022_ctf_quals/tree/main/crypto/bbb)
 * [SECCON CTF 2022 Quals - insufficient](https://github.com/SECCON/2022_ctf_quals/tree/main/crypto/insufficient)
-* SECCON CTF 2022 Final - not new PRNG
-* SECCON CTF 2023 Quals - Sickle
+* [SECCON CTF 2022 Final - not new PRNG](https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/crypto/not_new_prng)
+* [SECCON CTF 2023 Quals - Sickle](https://github.com/SECCON/SECCON2023_online_CTF/tree/main/reversing/Sickle)
+* [SatokiCTF - Sickle2](https://github.com/Xornet-Euphoria/kuso-pickle-2)
 
 ### Links for CTF
 
