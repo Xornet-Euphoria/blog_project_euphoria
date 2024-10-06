@@ -327,10 +327,9 @@ hex_code = "8c0574797065738c0c46756e6374696f6e547970659372390500008c057479706573
 functions = {}
 prev_f_idx = -1
 
-# extract functions
+# extract code objects
 class PytecodeUnpickler(CustomUnpickler):
     def load_reduce(self):
-	    # 厳密にはtypes.BuiltinFunctionTypeやtypes.BuiltinsMethodTypeの可能性があるが無視する (__code__が無くて飛ばすため)
         f: types.FunctionType = self.stack[-2]
         args = self.stack[-1]
 
@@ -342,16 +341,12 @@ class PytecodeUnpickler(CustomUnpickler):
         super().load_reduce()
 
 
-	# change the `co_varnames` for readability
-    def breakpoint_hook(self):
-        if self.ip == 353:
-            self.stack[-1] = tuple(f"var_{i}" for i in range(1337))
-
-        return super().breakpoint_hook()
+def change_varnames(self: CustomUnpickler):
+    self.stack[-1] = tuple(f"var_{i}" for i in range(1337))
 
 
 up = PytecodeUnpickler(bytes.fromhex(hex_code))
-up.set_breakpoint(353)
+up.set_breakpoint(353, change_varnames)
 
 inp = b"X" * 0x40
 
